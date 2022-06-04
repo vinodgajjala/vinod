@@ -1,0 +1,80 @@
+#%RAML 1.0
+title: calculator
+version: v1
+mediaType:  application/json
+
+traits:
+  query: !include /traits/trait.raml
+  
+/addition:
+  get:
+    is: [query]
+    responses:
+     200:
+      body:
+          example: !include /examples/addition-responce.json      
+/subtraction:
+  get :
+    is: [query]
+    responses:
+      200:
+        body:
+            example: !include /examples/subtraction-responce.json 
+/ multipication:
+  post:
+    is: [query]
+    responses:
+      200:
+        body:
+            example: !include /examples/multiplication-responce.json        
+/ division :
+  patch:
+    is: [query]
+    responses:
+      200:
+        body:
+            example: !include /examples/division-responce.json
+               
+      
+            
+              
+            
+                    
+            
+        
+              
+          
+                
+
+
+
+              
+                    
+              
+          
+                          
+                            
+              
+                    
+
+              
+            
+
+                
+                  
+                          
+
+
+                        
+
+                      
+            
+
+          
+
+      
+
+            
+
+        
+    
